@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="kanban_column_total_days" inherit_id="kanban.template">
+    <t t-extend="KanbanView.ColumnProgressBar">
+        <t t-jquery="div.o_kanban_counter_side" t-operation="before">
+            <div class="o_kanban_count_days"><b><t t-esc="widget.totalDaysValue || 0"/></b> day(s)  </div>
+        </t>
+    </t>
+</templates>

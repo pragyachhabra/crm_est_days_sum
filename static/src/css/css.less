@@ -1,0 +1,23 @@
+.o_kanban_counter {
+
+    > .o_kanban_count_days {
+        width: 15%;
+        display: inline;
+        margin-left: 2%;
+        margin-right: 10%;
+        color: @headings-color;
+        text-align: right;
+        white-space: nowrap;
+        .o-transform-origin(right, center);
+
+        &.o_kanban_grow {
+            .o-animation(grow, 1s, ease);
+        }
+
+        &.o_kanban_grow_huge {
+            .o-animation(grow_huge, 1s, ease);
+        }
+
+    }
+
+}
